@@ -6,6 +6,7 @@
     </head>
     <style>
         .menu-bar {
+            color: rgba(0, 0, 0, 0);
             background-color: rgba(255, 255, 0, 0.5);
             position: fixed;
             top: -20px;
@@ -18,16 +19,67 @@
         
         .homepage-link {
             font-family: cursive;
+            position: fixed;
+            top: -17px;
+            left: 10px;
         }
+        
+        .order-link {
+            font-family: "arial", monospace;
+            position: fixed;
+            top: -19px;
+            right: 10px;
+        }
+        
+        .questions-link {
+            font-family: "arial", monospace;
+            font-size: 30px;
+            position: fixed;
+            top: -27px;
+            right: 140px;
+        }
+        
+        button {
+            color: rgba(255, 0, 0);
+        }
+        
+        .LESS-IMPORTANT-CSS-BEGINS-HERE{}
+        .homepage-link-indent {
+            color: rgba(0, 0, 0, 0);
+            position: fixed;
+            top: 0px;
+            left: 10px;
+        }
+        .LESS-IMPORTANT-CSS-ENDS-HERE{}
     </style>
     <body>
-        <h2 class="menu-bar">
-            <a class = "homepage-link" href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a> <span class="clear">-------------------------------------------------</span>
+        <h2 class = "menu-bar">
+            ________________________________________________________________________________________________________
+        </h2>
+        <h2 class = "homepage-link">
+            <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
+        </h2>
+        <h2 class = "order-link">
+            <a>
+                ORDER
+            </a>
+        </h2>
+        <h2 class = "questions-link">
+            <a href = "#questions">?</a>
         </h2>
         <br>
         <p>
       This is an unfinished webpage.
         </p>
+        <h1 id = "questions">
+            Questions
+        </h1>
+        <input type = "text">
+        <button>
+            ASK
+        </button>
+        <h1>
+        </h1>
     </body>
     <script>
     </script>
