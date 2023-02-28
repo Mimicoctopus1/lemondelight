@@ -41,7 +41,13 @@
         
         .break-lines {
             position: absolute;
-            left: 0;
+            left: 0px;
+        }
+        
+        .top-link {
+            position: fixed;
+            bottom: 10px;
+            right: 5px;
         }
         
         button {
@@ -58,8 +64,8 @@
         .LESS-IMPORTANT-CSS-ENDS-HERE{}
     </style>
     <body>
-        <h2 class = "menu-bar">
-            ___________________________________________________________________________________________________________________________________________
+        <h2 id = "top" class = "menu-bar">
+            _______________________________________________________________________________________________________________________________________________________________
         </h2>
         <h2 class = "homepage-link">
             <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
@@ -212,12 +218,14 @@
         <h1 id = "questions">
             Questions
         </h1>
-        <input type = "text">
+        <input type = "text"><!--Text box-->
         <button>
             ASK
-        </button>
+        </button><!--ASK button-->
         <br>
         <span class = "break-lines">____________________________________________________________________</span>
+        <h1>FAQ</h1>
+        <a class = "top-link" href = "#top">TOP</a>
     </body>
     <script>
     </script>
