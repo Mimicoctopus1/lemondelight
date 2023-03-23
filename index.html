@@ -5,6 +5,17 @@
       <title>Lemon Delight</title>
     </head>
     <style>
+        #REUSABLE-CSS{}
+        .clear {
+            color: rgba(0, 0, 0, 0);
+        }
+        
+        .break-lines {
+            position: absolute;
+            left: 0px;
+        }
+        
+        #MENU-BAR-CSS{}
         .menu-bar {
             color: rgba(0, 0, 0, 0);
             background-color: rgba(255, 255, 0, 0.5);
@@ -12,10 +23,6 @@
             position: fixed;
             top: -50px;
             left: 0px;
-        }
-        
-        .clear {
-            color: rgba(0, 0, 0, 0);
         }
         
         .homepage-link {
@@ -28,7 +35,7 @@
         .order-link {
             font-family: "arial", monospace;
             position: fixed;
-            top: -4%;
+            top: -3%;
             right: 10px;
         }
         
@@ -36,37 +43,46 @@
             font-family: "arial", monospace;
             font-size: 30px;
             position: fixed;
-            top: -27px;
+            top: -5%;
             right: 140px;
         }
         
-        .break-lines {
-            position: absolute;
-            left: 0px;
-        }
-        
+        #GENERAL-CSS{}
         .top-link {
             position: fixed;
             bottom: 10px;
-            right: 5px;
+            right: 10px;
+        }
+        
+        .menu {
+            background-color: rgba(55, 234, 250);
+            width: 537px;
+            height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border: solid;
+            border-color: yellow;
+        }
+        
+        .scroll-note {
+            position: relative;
+            top: -15px;
+            left: 290px;
+        }
+        
+        .menu-title {
+            color: rgba(207, 204, 0);
+            position: relative;
+            bottom: 60px;
         }
         
         button {
             color: rgba(255, 0, 0);
         }
-        
-        .LESS-IMPORTANT-CSS-BEGINS-HERE{}
-        .homepage-link-indent {
-            color: rgba(0, 0, 0, 0);
-            position: fixed;
-            top: 0px;
-            left: 10px;
-        }
-        .LESS-IMPORTANT-CSS-ENDS-HERE{}
     </style>
     <body>
         <h2 id = "top" class = "menu-bar">
-            _______________________________________________________________________________________________________________________________________________________________
+            ______________________________________________________________________________________________________________________________________________________________
         </h2>
         <h2 class = "homepage-link">
             <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
@@ -150,10 +166,12 @@
                 </tr>
             </tbody>
         </table>
-        <span class = "break-lines">____________________________________________________________________</span>
         
-        <div >
-        <h1>Everyday Menu</h1>
+        <br>
+        
+        <div class = "menu">
+        <p class = "scroll-note"> Scroll down inside this box for more.</p>
+        <h1 class = "menu-title">Everyday Menu</h1>
         <p>
             **price and sugar(in cups)
         </p>
@@ -217,9 +235,7 @@
                 </tr>
             </tbody>
         </table>
-        </div>
-        
-        <span class = "break-lines">____________________________________________________________________</span>
+        </div> <!--The Menu-->
         <h1 id = "questions">
             Questions
         </h1>
