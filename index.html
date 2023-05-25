@@ -51,11 +51,48 @@
             right: 180px;
         }
         
+        .openSideMenu {
+            border: 1px solid  black;
+            padding: 4px;
+            background-color: aqua;
+            font: 5px cursive;
+            position: fixed;
+            top: 3%;
+            right: 10px;
+        }
+        
+        .closeSideMenu {
+            color: rgba(255, 0, 0);
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 300%;
+        }
+        
+        .sideMenu {
+            position: fixed;
+            color: rgba(255, 255, 255, 1);
+            top: 0%;
+            right: 0%;
+            height: 100%;
+            width: 20%;
+            background-color: rgba(0, 0, 0, 1);
+            z-index: 1;
+            display: none;
+        }
         #GENERAL-CSS{}
         .top-link {
             position: fixed;
             bottom: 10px;
             right: 10px;
+            z-index: 0;
+        }
+        
+        .timesAvailable {
+            border: 1px solid green;
+        }
+        
+        .timesAvailable td {
+            border: 1px solid rgba(255, 0, 255, 0.5);
         }
         
         .menu {
@@ -74,14 +111,6 @@
             left: 290px;
         }
         
-        .timesAvailable {
-            border: 1px solid green;
-        }
-        
-        .timesAvailable td {
-            border: 1px solid rgba(255, 0, 255, 0.5);
-        }
-        
         .menu-title {
             color: rgba(207, 204, 0);
             position: relative;
@@ -93,6 +122,7 @@
         }
     </style>
     <body>
+        <div>
         <h2 id = "top" class = "menu-bar">
             ______________________________________________________________________________________________________________________________________________________________
         </h2>
@@ -101,13 +131,22 @@
         </h2>
         <h2 class = "questions-link">
             <a href = "#questions">?</a>
-        </h2>
+        </h2><!--Quest?ons Link-->
         <h2 class = "order-link">
             <a href = "https://mimicoctopus1.github.io/lemondelight.order/">
                 ORDER
             </a>
-        </h2>
+            <div class = "openSideMenu">
+               <strong>______<br>______<br>______</strong>
+            </div>
+        </h2><!--Order Link-->
+        </div><!--Menu Bar-->
         <br>
+        <div class = "sideMenu">
+            <input type = "button" value = "X" class = "closeSideMenu">
+            <p>I was just thinking this text and actual box could be a different color. What seems like a good color?</p>
+            <a href = "https://mimicoctopus1.github.io/lemondelight.story">Story</a>
+        </div><!--sideMenu-->
         <p>
       This is an unfinished webpage.
         </p>
@@ -183,7 +222,7 @@
         
         <div class = "menu">
         <p class = "scroll-note"> Scroll down inside this box for more.</p>
-        <h1 class = "menu-title">Everyday Menu</h1>
+    <h1 class = "menu-title">Everyday Menu</h1><!--Menu Label-->
         <p>
             **price and sugar(in cups)
         </p>
@@ -551,7 +590,25 @@
         <div class = "break-lines"></div><!--Break Line-->
         <h1>FAQ</h1>
         <a class = "top-link" href = "#top">TOP</a>
+       <script>
+            var sideOpener = document.getElementsByClassName("openSideMenu")[0];
+            var sideCloser = document.getElementsByClassName("closeSideMenu")[0];
+            var sideMenu = document.getElementsByClassName("sideMenu")[0];
+            var sideMenuOpen = false;
+            var showSideMenu = function() {
+                sideMenuOpen = !sideMenuOpen;
+                if(sideMenuOpen) {
+                    sideMenu.style.display = "block";
+                }
+            };
+            var hideSideMenu = function() {
+                sideMenuOpen = !sideMenuOpen;
+                if(!sideMenuOpen) {
+                    sideMenu.style.display = "none";
+                }
+            }
+            sideOpener.addEventListener("click", showSideMenu);
+            sideCloser.addEventListener("click", hideSideMenu);
+        </script>
     </body>
-    <script>
-    </script>
 </html>
