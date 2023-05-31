@@ -19,7 +19,7 @@
             padding: 0px;
         }
         
-        #MENU-BAR-CSS{}
+        /*MENU BAR CSS*/
         .menu-bar {
             color: rgba(0, 0, 0, 0);
             background-color: rgba(255, 255, 0, 0.5);
@@ -79,12 +79,21 @@
             z-index: 1;
             display: none;
         }
-        #GENERAL-CSS{}
+        
+        /*General CSS*/
         .top-link {
             position: fixed;
             bottom: 10px;
             right: 10px;
             z-index: 0;
+        }
+        
+        .phoneOrientationWarning {
+            position: absolute;
+            color: rgba(255, 255, 0, 0.5);
+            top: 0px;
+            left: 10%;
+            z-index: -1;/*Hides the message behind the menubar.*/
         }
         
         .timesAvailable {
@@ -128,7 +137,7 @@
         </h2>
         <h2 class = "homepage-link">
             <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
-        </h2>
+        </h2><!--Homepage Link-->
         <h2 class = "questions-link">
             <a href = "#questions">?</a>
         </h2><!--Quest?ons Link-->
@@ -136,20 +145,18 @@
             <a href = "https://mimicoctopus1.github.io/lemondelight.order/">
                 ORDER
             </a>
-            <div class = "openSideMenu">
-               <strong>______<br>______<br>______</strong>
-            </div>
         </h2><!--Order Link-->
+        <div class = "openSideMenu">
+               <strong>______<br>______<br>______</strong>
+            </div><!--Open Side Menu-->
         </div><!--Menu Bar-->
         <br>
         <div class = "sideMenu">
             <input type = "button" value = "X" class = "closeSideMenu">
             <p>I was just thinking this text and actual box could be a different color. What seems like a good color?</p>
             <a href = "https://mimicoctopus1.github.io/lemondelight.story">Story</a>
-        </div><!--sideMenu-->
-        <p>
-      This is an unfinished webpage.
-        </p>
+        </div><!--Side Menu (Opens when the blue box is clicked.)-->
+        <p class = "phoneOrientationWarning">Note: If you are on a phone, please orient your screen sideways (hot dog style) or you may miss out on important features.</p>
         <h1>
             WEEKLY SCHEDULE
         </h1>
