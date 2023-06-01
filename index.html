@@ -114,6 +114,10 @@
             border-color: yellow;
         }
         
+        .menu td{
+            border: 1px solid green;
+        }
+        
         .scroll-note {
             position: relative;
             top: -15px;
@@ -159,8 +163,9 @@
         <p class = "phoneOrientationWarning">Note: If you are on a phone, please orient your screen sideways (hot dog style) or you may miss out on important features.</p>
         <h1>
             WEEKLY SCHEDULE
-        </h1>
-        <p>*Note: All hours after 6 are AM and all hours before 6 are PM.</p>
+        </h1><!--Schedule Heading-->
+        <p>*Note: All hours after 6 are AM and all hours before 6 are PM.
+        </p>
         <table class = "timesAvailable">
             <thead>
                 <tr>
@@ -179,8 +184,11 @@
                     <td>
                         <h4>SATURDAY</h4>
                     </td>
+                    <td>
+                        <!--A blank space for no reason...-->
+                    </td>
                 </tr>
-            </thead>
+            </thead><!--Days-->
             <tbody>
                 <tr>
                     <td>
@@ -222,11 +230,9 @@
                         <h3>SPECIALS</h3>
                     </td>
                 </tr>
-            </tbody>
+            </tbody><!--Body-->
         </table><!--Times Available-->
-        
         <br>
-        
         <div class = "menu">
         <p class = "scroll-note"> Scroll down inside this box for more.</p>
     <h1 class = "menu-title">Everyday Menu</h1><!--Menu Label-->
@@ -234,7 +240,7 @@
             **price and sugar(in cups)
         </p>
         <table>
-            <thead>
+            <thead style = "background-color: rgba(0, 255, 30);">
                 <tr>
                     <td>
                          Name
@@ -253,8 +259,7 @@
                         <span class = "clear">-----------</span>
                     </td>
                 </tr>
-                <tr><td><span class = "clear">-</span></td></tr>
-            </thead>
+        </thead><!--Head-->
             <tbody>
                 <tr>
                     <td>
@@ -571,12 +576,12 @@
                         </ul>
                     </td>
                 </tr><!--Lemon Cupcakes-->
-            </tbody>
-        </table>
+            </tbody><!--Body-->
+        </table><!--Table-->
         </div> <!--The Menu-->
         <br><br>
         
-        <a href = "https://www.khanacademy.org/computer-programming/lemon-delightclicker/4756418415869952">
+        <a href = "https://mimicoctopus1.github.io/lemondelight.clicker/">
         Did you know we have a clicker game?
         </a><!--Clicker Game Link-->
         
