@@ -75,7 +75,7 @@
             right: 0%;
             height: 100%;
             width: 20%;
-            background-color: rgba(0, 0, 0, 1);
+            background-color: rgba(224, 62, 224, 0.75);
             z-index: 1;
             display: none;
         }
@@ -154,6 +154,7 @@
                <strong>______<br>______<br>______</strong>
             </div><!--Open Side Menu-->
         </div><!--Menu Bar-->
+        <img src = "Lemon Delight Logo.png">
         <br>
         <div class = "sideMenu">
             <input type = "button" value = "X" class = "closeSideMenu">
@@ -232,6 +233,8 @@
                 </tr>
             </tbody><!--Body-->
         </table><!--Times Available-->
+        <div class = "break-lines">
+        </div><!--Break Line-->
         <br>
         <div class = "menu">
         <p class = "scroll-note"> Scroll down inside this box for more.</p>
@@ -271,7 +274,7 @@
                                 $1
                             </li>
                             <li>
-                                SECRET
+                                1/12
                             </li>
                         </ul>
                     </td>
@@ -281,7 +284,7 @@
                                 $2
                             </li>
                             <li>
-                                SECRET
+                                1/8
                             </li>
                         </ul>
                     </td>
@@ -291,7 +294,7 @@
                                 $3
                             </li>
                             <li>
-                                SECRET
+                                1/6
                             </li>
                         </ul>
                     </td>
@@ -579,8 +582,10 @@
             </tbody><!--Body-->
         </table><!--Table-->
         </div> <!--The Menu-->
-        <br><br>
-        
+        <br>
+        <div class = "break-lines">
+        </div><!--Break Line-->
+        <br>
         <a href = "https://mimicoctopus1.github.io/lemondelight.clicker/">
         Did you know we have a clicker game?
         </a><!--Clicker Game Link-->
@@ -607,7 +612,7 @@
             var sideOpener = document.getElementsByClassName("openSideMenu")[0];
             var sideCloser = document.getElementsByClassName("closeSideMenu")[0];
             var sideMenu = document.getElementsByClassName("sideMenu")[0];
-            var sideMenuOpen = false;
+            {var sideMenuOpen = false;
             var showSideMenu = function() {
                 sideMenuOpen = !sideMenuOpen;
                 if(sideMenuOpen) {
@@ -622,6 +627,7 @@
             }
             sideOpener.addEventListener("click", showSideMenu);
             sideCloser.addEventListener("click", hideSideMenu);
+            }/*Open and Close sideMenu*/
         </script>
     </body>
 </html>
