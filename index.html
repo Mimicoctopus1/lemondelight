@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta property = "og:image" content = "https://mimicoctopus1.github.io/lemondelight/Lemon%20Delight%20Thumbnail.png">
       <title>Lemon Delight</title>
     </head>
     <style>
@@ -597,8 +598,8 @@
         <h1 id = "questions">
             Questions
         </h1>
-        <input type = "text"><!--Text box-->
-        <button>
+        <input type = "text" placeholder = "Ask a question!"><!--Text box-->
+        <button class = "askButton">
             ASK
         </button><!--ASK button-->
         <br>
@@ -611,6 +612,7 @@
             var sideOpener = document.getElementsByClassName("openSideMenu")[0];
             var sideCloser = document.getElementsByClassName("closeSideMenu")[0];
             var sideMenu = document.getElementsByClassName("sideMenu")[0];
+            var askButton = document.getElementsByClassName("askButton")[0];
             {var sideMenuOpen = false;
             var showSideMenu = function() {
                 sideMenuOpen = !sideMenuOpen;
@@ -627,6 +629,9 @@
             sideOpener.addEventListener("click", showSideMenu);
             sideCloser.addEventListener("click", hideSideMenu);
             }/*Open and Close sideMenu*/
+            askButton.addEventListener("click", function() {
+                alert("Sorry! Questions are still unavailable. However, you can still email 'lemondelightstand@gmail.com' to ask a question.")
+            })
         </script>
     </body>
 </html>
