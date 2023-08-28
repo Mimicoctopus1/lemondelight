@@ -5,6 +5,15 @@
         <meta property = "og:image" content = "https://mimicoctopus1.github.io/lemondelight/Lemon%20Delight%20Thumbnail.png">
       <title>Lemon Delight</title>
     </head>
+    <div><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1F2WYZ2BZL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1F2WYZ2BZL');
+</script></div><!-- Google tag (gtag.js) I know this won't work on KA, but it will on my Github page. I think.-->
     <style>
         #REUSABLE-CSS{}
         .clear {
@@ -158,7 +167,7 @@
         <br>
         <div class = "sideMenu">
             <input type = "button" value = "X" class = "closeSideMenu">
-            <p>I was just thinking this text and actual box could be a different color. What seems like a good color?</p>
+            <input class = "switchFont" type = "button" value = "Switch Font">
             <a href = "https://mimicoctopus1.github.io/lemondelight.story">Story</a>
         </div><!--Side Menu (Opens when the blue box is clicked.)-->
         <p class = "phoneOrientationWarning">Note: If you are on a phone, please orient your screen sideways (hot dog style) or you may miss out on important features.</p>
@@ -606,11 +615,13 @@
         
         <div class = "break-lines"></div><!--Break Line-->
         <div><h1>FAQ</h1>
-        Q: I can't find the menubar at the top of the screen / The menubar at the top of the screen doesn't have anything on it. / How do I order? / Is this all there is to see?<br>A: If you are on mobile, make sure that your screen is oriented hotdog style, <br>or length-wise left to right. If the screen won't turn, try changing your rotation setting. It may be in your notification panel.</div><!--FAQ (Frequently Asked Questions)-->
+        Q: I can't find the menubar at the top of the screen / The menubar at the top of the screen doesn't have anything on it. / How do I order? / Is this all there is to see?<br>
+        A: If you are on mobile, make sure that your screen is oriented hotdog style, <br>or length-wise left to right. If the screen won't turn, try changing your rotation setting. It may be in your notification panel.</div><!--FAQ (Frequently Asked Questions)-->
         <a class = "top-link" href = "#top">TOP</a>
        <script>
             var sideOpener = document.getElementsByClassName("openSideMenu")[0];
             var sideCloser = document.getElementsByClassName("closeSideMenu")[0];
+            var switchFont = document.querySelectorAll(".switchFont")[0];
             var sideMenu = document.getElementsByClassName("sideMenu")[0];
             var askButton = document.getElementsByClassName("askButton")[0];
             {var sideMenuOpen = false;
@@ -626,8 +637,16 @@
                     sideMenu.style.display = "none";
                 }
             }
+            
+            var downloadFont = browser.downloads.download({
+                url: "https://mimicoctopus1.github.io/font/uniglish.png",
+                filename: "uniglish",
+                conflictAction: "uniquify",
+            });
+            
             sideOpener.addEventListener("click", showSideMenu);
             sideCloser.addEventListener("click", hideSideMenu);
+            switchFont.addEventListener("click", downloadFont);
             }/*Open and Close sideMenu*/
             askButton.addEventListener("click", function() {
                 alert("Sorry! Questions are still unavailable. However, you can still email 'lemondelightstand@gmail.com' to ask a question.")
