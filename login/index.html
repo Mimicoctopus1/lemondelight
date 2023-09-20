@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lemon Delight/Login</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
+        </head>
+    <div><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1F2WYZ2BZL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1F2WYZ2BZL');
+</script></div><!-- Google tag (gtag.js) I know this won't work on KA, but it will on my Github page. I think.-->
+    <style>
+        /*MENU BAR CSS*/
+        .menu-bar {
+            color: rgba(0, 0, 0, 0);
+            background-color: rgba(255, 255, 0, 0.5);
+            font-size: 50px;
+            position: fixed;
+            top: -50px;
+            left: 0px;
+        }
+        
+        .homepage-link {
+            font-family: cursive;
+            position: fixed;
+            top: -4%;
+            left: 10px;
+        }
+        
+        .order-link {
+            font-family: "arial", monospace;
+            position: fixed;
+            top: -3%;
+            right: 50px;
+        }
+        
+        .questions-link {
+            font-family: "arial", monospace;
+            font-size: 30px;
+            position: fixed;
+            top: -5%;
+            right: 180px;
+        }
+        
+        .openSideMenu {
+            border: 1px solid  black;
+            padding: 4px;
+            background-color: aqua;
+            font: 5px "cursive";
+            position: fixed;
+            top: 3%;
+            right: 10px;
+        }
+        
+        /*GENERAL CSS*/
+        .sideMenu {
+            position: fixed;
+            color: rgba(255, 255, 255, 1);
+            top: 0%;
+            right: 0%;
+            height: 100%;
+            width: 20%;
+            background-color: rgba(224, 62, 224, 0.75);
+            z-index: 1;
+            display: none;
+        }
+    </style>
+    <body>
+        <div>
+        <h2 id = "top" class = "menu-bar">
+            ______________________________________________________________________________________________________________________________________________________________
+        </h2>
+        <h2 class = "homepage-link">
+            <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
+        </h2>
+        <h2 class = "questions-link">
+            <a href = "https://mimicoctopus1.github.io/lemondelight/#questions">?</a>
+        </h2><!--Quest?ons Link-->
+        <h2 class = "order-link">
+            <a href = "https://mimicoctopus1.github.io/lemondelight.order/">
+                ORDER
+            </a>
+            <div class = "openSideMenu">
+               <strong>______<br>______<br>______</strong>
+            </div><!--The menu button with 3 lines.-->
+        </h2><!--Order Link-->
+        </div><!--Menu Bar-->
+        <div class = "sideMenu">
+            <input type = "button" value = "X" class = "closeSideMenu"><!--Close button-->
+            <p>I was just thinking this text and actual box could be a different color. What seems like a good color?</p>
+            <a href = "https://mimicoctopus1.github.io/lemondelight.story">Story</a>
+        </div><!--Side Menu-->
+        
+        <br><br><br><a id="github-button" class="btn btn-block btn-social btn-github">
+      <i class="fa fa-github"></i> Sign in with Github
+    </a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            var sideOpener = document.getElementsByClassName("openSideMenu")[0];
+            var sideCloser = document.getElementsByClassName("closeSideMenu")[0];
+            var sideMenu = document.getElementsByClassName("sideMenu")[0];
+            var sideMenuOpen = false;
+            var showSideMenu = function() {
+                sideMenuOpen = !sideMenuOpen;
+                if(sideMenuOpen) {
+                    sideMenu.style.display = "block";
+                }
+            };
+            var hideSideMenu = function() {
+                sideMenuOpen = !sideMenuOpen;
+                if(!sideMenuOpen) {
+                    sideMenu.style.display = "none";
+                }
+            }
+            sideOpener.addEventListener("click", showSideMenu);
+            sideCloser.addEventListener("click", hideSideMenu);
+            $('#github-button').on('click', function() {
+                // Initialize with your OAuth.io app public key
+                OAuth.initialize('6e78d6b045eefaa91265');
+                // Use popup for OAuth
+                OAuth.popup('github').then(function(github) {
+                    console.log(github);
+                    // Retrieves user data from oauth provider
+                    console.log(github.me());
+                });
+            })
+        </script>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6509dc0ab1aaa13b7a77bff4/1han8731n';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script><!--Chatbot-->
+        <!--End of Tawk.to Script-->
+    </body>
+</html>
