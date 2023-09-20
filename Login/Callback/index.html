@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lemon Delight/Login/Callback</title>
+    </head>
+    <body>
+        <h1>
+            You are now signed in. To verify, press below. If you get true, you are signed in. Verification is not required to be signed in.
+        </h1>
+        <button onclick = "alert(verify());">VERIFY</button>
+        <script>
+            /*Set the cookie.*/
+            document.cookie = "lemondelightsignedin=true; SameSite=None; Secure";
+            
+            /*If you were to log document.cookie, you'd get 
+lemondeligtsignedin=true; signedin=true
+            */
+            
+            var verify = function() {
+                var cookiesArray = 
+                document.cookie.split("; ")
+                /*Split the cookies into an array of the individual cookies.*/
+            
+                var signedin = null;
+                var searchRep = 0;
+                while(searchRep < cookiesArray.length) {
+                    if(cookiesArray[searchRep].startsWith("lemondelightsignedin=")) {
+                        signedin = cookiesArray[searchRep];/*Get the cookie*/
+                    
+                        break;/*No need to search anymore*/
+                    } /*Find the Cookie*/
+                    searchRep += 1;
+                }
+                
+                signedin = (signedin.includes("true"));/*Check if the cookie has true in it.*/
+                return (signedin);
+            }
+        </script>
+    </body>
+</html>
