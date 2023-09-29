@@ -616,9 +616,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             Questions
         </h1>
         <input type = "text" placeholder = "Ask a question!"><!--Text box-->
-        <button class = "askButton">
-            ASK
-        </button><!--ASK button-->
+        <input type = "button" class = "askButton" value = "ASK" style = "color: red;">
         <br>
         
         <div class = "break-lines"></div><!--Break Line-->
@@ -646,19 +644,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 }
             }
             
-            var downloadFont = browser.downloads.download({
-                url: "https://mimicoctopus1.github.io/font/uniglish.png",
-                filename: "uniglish",
-                conflictAction: "uniquify",
-            });
-            
             sideOpener.addEventListener("click", showSideMenu);
             sideCloser.addEventListener("click", hideSideMenu);
             switchFont.addEventListener("click", downloadFont);
             }/*Open and Close sideMenu*/
-            askButton.addEventListener("click", function() {
-                alert("Sorry! Questions are still unavailable. However, you can still email 'lemondelightstand@gmail.com' to ask a question.")
-            })
+            
+            var askError = function() {
+                alert("Sorry! Questions are still unavailable. However, you can still email 'lemondelightstand@gmail.com' to ask a question.");
+            };
+            
+            askButton.addEventListener("click", askError);
         </script>
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
