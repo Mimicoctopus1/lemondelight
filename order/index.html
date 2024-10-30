@@ -2,27 +2,6 @@
 <!--If the iframe doesn't show and you're here on KA, it's okay. iframes aren't allowed, but I didn't really care because I'm just using KA for Oh Noes, autocomplete, and the quickly loading previews. Speaking of Error Buddy, he kept giving me an error when I used an iframe, so in order for me to keep working without the error, I used some JS to insert it after the HTML was laid out.-->
 <html>
     <head>
-        <!-- Google Tag Manager -->
-        <div>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5M4LQ64P');</script>
-<!-- End Google Tag Manager --></div>
-        
-        <script src="https://www.google.com/recaptcha/enterprise.js?onload=onloadCallback&render=explicit"
-    async defer>
- </script><!--Load reCAPTCHA resource-->
-        <script type="text/javascript">
-            var onloadCallback = function() {
-                grecaptcha.enterprise.render(reCAPTCHADiv, {
-                    'sitekey': "6LcQRgQoAAAAAAdV7FnVtEfzBk8H85uVkzxyGhor",
-                    'action': 'LOGIN',
-                    "theme": "light"
-                });
-            };
-        </script><!--Create onLoad callback-->
         <meta charset="utf-8">
         <title>Lemon Delight.Order</title>
     </head>
@@ -31,11 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         @font-face {
             font-family: "uniglish";
             src: url("https://mimicoctopus1.github.io/fonts/uniglish");
-        }/*So, you might be wondering what this is. Well, it doesn't work on KA, or even on Chrome. I'll report for Edge and Firefox later. It's actually, however, a font I made on 
-        calligraphr.com, but it doesn't work here. After trouble-
-        shooting, I figured out it works here 
-            https://developer.mozilla.org/en-US/play
-        */
+        }
       
         .clear {
             color: rgba(0, 0, 0, 0);
@@ -145,13 +120,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         #GENERAL-CSSS {}
     </style>
     <body>
-        <div>
-        <div class = "googleTagManagerNoscript"></div>
-        <script>
-            var googleTagManagerNoscript = document.getElementsByClassName("googleTagManagerNoscript")[0];
-            googleTagManagerNoscript.innerHTML = '<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M4LQ64P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->';
-        </script></div><!--Google Tag Manager (noscript)-->
-        
         <div class = "entirePage">
         <div>
             <h2 id = "top" class = "menu-bar">
@@ -185,11 +153,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p>Note that all the time information on this page was last checked as of when this page was opened. If not <a href = "https://mimicoctopus1.github.io/lemondelight.order/">reload</a>ed, this page may display false information.</p>
         <meter min = "0" max = "20" high = "15" low = "5" optimum = "0" value = "0" class = "wait-bar"></meter>
         <div class = "message"></div>
-        <div class = "break-lines">
-        </div><!--Break Line--><br>
-        <div class = "recaptcha"></div><!---->
-        <div class = "break-lines">
-        </div><!--Break Line-->
         <h1>
             Please order by <a href = "https://docs.google.com/document/d/1osCxfghrpzgDEA-WeOlFKx6hE-efKAPypqVMJlTSwCc/copy">emailing</a> or otherwise contacting<br><a href = "mailto:lemondelightstand@gmail.com"> lemondelightstand@gmail.com</a><br>or texting "ORDER" to<br><a 
             href = "tel:+15597779935">
